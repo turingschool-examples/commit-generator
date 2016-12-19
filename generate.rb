@@ -21,7 +21,7 @@ def run(delay, input_filename, output_filename)
   input_file.each_line do |line|
     add_to_file(line, output_file)
     add
-    message = "Adds '#{line[0..60]}'"
+    message = "Adds text: #{line[0..60]}"
     commit(message)
     push
     sleep delay
